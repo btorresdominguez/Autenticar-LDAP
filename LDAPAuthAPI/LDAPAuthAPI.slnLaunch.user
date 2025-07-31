@@ -1,0 +1,27 @@
+[
+  {
+    "Name": "Nuevo perfil",
+    "Projects": [
+      {
+        "Path": "src\\Application\\Application.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "src\\Domain\\Domain.csproj",
+        "Action": "StartWithoutDebugging"
+      },
+      {
+        "Path": "src\\Infrastructure\\Infrastructure.csproj",
+        "Action": "StartWithoutDebugging"
+      },
+      {
+        "Path": "src\\Uniwork\\Uniwork.csproj",
+        "Action": "StartWithoutDebugging"
+      },
+      {
+        "Path": "src\\WebApi\\WebApi.csproj",
+        "Action": "StartWithoutDebugging"
+      }
+    ]
+  }
+]

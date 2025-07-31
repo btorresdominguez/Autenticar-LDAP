@@ -1,0 +1,34 @@
+version: '3.8'
+services:
+  openldap:
+    image: bitnami/openldap:2.6
+    container_name: openldap
+    environment:
+      LDAP_ADMIN_USERNAME: admin
+      LDAP_ADMIN_PASSWORD: adminpassword
+      LDAP_ROOT: dc=miempresa,dc=com
+      LDAP_USERS: user01,user02
+      LDAP_PASSWORDS: password1,password2
+    ports:
+      - "1389:1389"
+      - "1636:636"
+    volumes:
+      - ./ldap-data:/bitnami/openldap
+    networks:
+      - my_network
+
+  ldapauthapi:
+    build:
+      context: ../src   # Ajustado para apuntar a la carpeta src
+      dockerfile: Dockerfile  # Nombre del Dockerfile
+    container_name: openldap_service
+    ports:
+      - "5001:5000"
+    networks:
+      - my_network
+    depends_on:
+      - openldap
+
+networks:
+  my_network:
+    driver: bridge

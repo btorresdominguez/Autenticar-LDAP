@@ -1,0 +1,19 @@
+dn: uid=jdoe,ou=users,dc=miempresa,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: John Doe
+sn: Doe
+uid: jdoe
+userPassword: secret123
+
+dn: uid=janedoe,ou=users,dc=miempresa,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Jane Doe
+sn: Doe
+uid: janedoe
+userPassword: secret456

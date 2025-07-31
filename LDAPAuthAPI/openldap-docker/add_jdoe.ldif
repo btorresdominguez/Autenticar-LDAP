@@ -1,0 +1,12 @@
+dn: uid=jdoe,ou=users,dc=miempresa,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: John Doe
+sn: Doe
+uid: jdoe
+userPassword: secret123
+mail: jdoe@example.com
+department: IT
+title: Software Engineer

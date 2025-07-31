@@ -1,0 +1,10 @@
+dn: uid=jdoe,ou=users,dc=miempresa,dc=com
+changetype: modify
+replace: mail
+mail: jdoe@example.com
+
+replace: department
+department: IT
+
+replace: title
+title: Software Engineer
